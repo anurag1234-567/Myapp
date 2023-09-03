@@ -12,7 +12,7 @@ function Contact(){
             e.preventDefault();
             const data = { username, email, message };
             // send user details to server
-             axios.post('https://email-sender-gigz.onrender.com/contact', data)
+             axios.post('https://mail-server-48cv.onrender.com/contact', data)
             .catch((err)=>{ console.log(err); })
             setUsername(''); setMessage(''); setEmail('');
         }catch(err){
