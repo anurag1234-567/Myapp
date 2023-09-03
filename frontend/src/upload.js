@@ -24,7 +24,7 @@ function App(){
             // upload file on firebase storage
             await uploadBytes(storageRef, file);
             // send uploaded file details to server
-            axios.post('https://email-sender-gigz.onrender.com/upload', data)
+            axios.post('https://mail-server-48cv.onrender.com/upload', data)
             .catch( (err) => { console.log(err) }); 
 
             setUsername(''); setDescription(''); setEmail(''); setFile(null); 
